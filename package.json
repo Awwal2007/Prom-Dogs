@@ -1,5 +1,4 @@
 {
-  "homepage": "https://awwal2007.github.io/Prom-Dogs",
   "name": "hunter",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +8,6 @@
     "build": "build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
