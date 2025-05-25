@@ -15,6 +15,10 @@ import BookPuppy from './Pages/BookPuppy'
 import Blog from './Pages/Blog'
 import PetPortrait from './Pages/PetPortrait'
 import Contact from './Pages/Contact'
+import { Toaster } from "sonner";
+import AdminDashboard from './Pages/Admin'
+import AdminAddBlog from './Pages/AddBlog'
+import AdminManageBlogs from './Pages/ManageBlog'
 
 function App() {
   return (
@@ -30,10 +34,18 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/pet-portrait" element={<PetPortrait />} />
           <Route path="/contact-us" element={<Contact />} />
+        
+          
+        </Routes>
+        <Routes>
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/add-blog" element={<AdminAddBlog />} />
+          <Route path="/admin/manage-blogs" element={<AdminManageBlogs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
-     </BrowserRouter>
+     </BrowserRouter >
+     <Toaster position="top-right" />
       
     </>
   )
