@@ -23,7 +23,7 @@ import AdminManageBlogs from './Pages/ManageBlog'
 function App() {
   return (
     <>
-     <BrowserRouter>
+     {/* <BrowserRouter> */}
         <Social />
         <Header />
         <Routes>
@@ -35,16 +35,16 @@ function App() {
           <Route path="/pet-portrait" element={<PetPortrait />} />
           <Route path="/contact-us" element={<Contact />} />
         
-          
-        </Routes>
-        <Routes>
+        {/* <Routes> */}
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/add-blog" element={<AdminAddBlog />} />
           <Route path="/admin/manage-blogs" element={<AdminManageBlogs />} />
           <Route path="*" element={<NotFound />} />
+        {/* </Routes> */}
+          
         </Routes>
         <Footer />
-     </BrowserRouter >
+     {/* </BrowserRouter > */}
      <Toaster position="top-right" />
       
     </>
